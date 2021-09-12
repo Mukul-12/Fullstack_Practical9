@@ -325,9 +325,12 @@ h4{
         margin-top: 6px;
     }    
 }
-@media (min-width: 150px) and (max-width: 624px) {
+@media (max-width: 450px){
+    .container{
+        width: 100%;
+    }
     .header {
-        width: 97%;
+        width: 94%;
         background-color: grey;
         position: fixed;
         height: 70px;
