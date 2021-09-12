@@ -1,0 +1,82 @@
+.card {
+    width: 22%;
+    float: left;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+    height: 580px;
+    margin: 20px 15px;
+    background-color:rgba(248, 213, 170, 0.486);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px black;
+}
+h5{
+    font-size: 20px;
+    text-align: center;
+}
+.image img{
+    width: 100%;
+    border-radius: 20px;
+    height: 150px;
+}
+.Heading h4{
+    text-align: center;
+    font-size: 30px;
+}
+.card > p{
+    height: 240px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 25px;
+}
+.card > a{
+    display: block;
+    text-align: center;
+    color:white;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.card a:hover {
+    background-color:rgb(152, 26, 202);
+}
+body {
+    background-color:white;
+}
+@media (min-width: 801px) and (max-width: 1199px) {
+    .card{
+        width: 40%;
+        height: 520px;
+        margin-left:30px;
+    } 
+    .card > p{
+        height: 190px;
+    }
+}
+@media (max-width: 800px) {
+    .card{
+        width: 40%;
+        height: 650px;
+        margin-left:30px;
+    } 
+    .card > p{
+        height: 300px;
+    }
+
+}
+@media (max-width: 625px) {
+    .card{
+        width: 90%;
+        margin-left: 30px;
+        height: 490px;
+    }
+    .card > p{
+        height: 150px;
+        overflow: hidden;
+    }
+    .card > a{
+        margin-top: 10px;
+    }
+}

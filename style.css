@@ -1,0 +1,326 @@
+*{
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.header{
+    width: 97.738%;
+    height: 70px;
+    background-color: gray;
+    position: fixed;
+    padding:  0px 20px;
+}
+.menu{
+    list-style: none;
+    float: right;
+}
+.menu li {
+    display: inline-block;
+    line-height: 34px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    padding: 26px 10px;
+    
+}
+.menu li a:hover {
+    color: Orange;
+    background-color: white;
+}
+html {
+    scroll-padding: 40px;
+    scroll-behavior: smooth;  
+}
+.show-btn,.hide-btn,#check {
+      font-size: 30px;
+      line-height: 25px;
+      display: none;
+      float: right;
+      padding-right: 5px;
+      color: white;
+    }
+.banner{
+    height: 100vh;
+    margin-top: 80px;
+    background-image: url(./Image/Practical8.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 100px;
+    padding: 30px;
+}
+h4{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+#section1{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section1::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.circle img{ 
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /* float: left; */
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    width: 49%;
+    height: 500px;
+    margin-top: 12px;
+    background-color: grey;
+    font-size: 40px;
+    color: white;
+    float: left;
+}
+.left p{
+    font-size: 20px;
+    text-align: justify;
+}
+.part{
+    width: 50%;
+    height: 164px;
+    color: white;
+    float: right;
+    margin-bottom: 5px;
+}
+#Project1{
+    background-image: url(./Image/project1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Project2{
+    background-image: url(./Image/project2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Project3{
+    background-image: url(./Image/project\ 3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section3{
+    width: 100%;
+    float:left;
+}
+.section4{
+    width: 100%;
+    float: left;
+}
+.section4 p{
+    height: 70px;
+    background-color: plum;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+@media (min-width: 801px) and (max-width: 1199px) {
+    #section1{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'cir1 cir2'
+        'cir3 cir4';
+    }
+    #section1 #cir1{
+        grid-area: cir1;
+    }
+    #section1 #cir2{
+        grid-area: cir2;
+    }
+    #section1 #cir3{
+        grid-area: cir3;
+    }
+    #section1 #cir4{
+        grid-area: cir4;
+    }
+}
+@media (max-width: 800px) {
+    .header {
+        width: 94.5%;
+        background-color: grey;
+        position: fixed;
+        height: 70px;
+        line-height: 35px;
+    }
+    .show-btn, .hide-btn{
+        display: block;
+        color: white;
+    }
+    .menu{
+        position: fixed;
+        background-color: gray;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: 1s;
+        padding: 80px 0px;
+    }
+    .menu li{
+        display: block;
+    }
+    .menu li a{
+        display: block;
+        padding: 20px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    .hide-btn{
+        position:absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .banner{
+        background-image: url(./Image/Practical8.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #section1{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'cir1 cir2'
+        'cir3 cir4';
+    }
+    #section1 #cir1{
+        grid-area: cir1;
+    }
+    #section1 #cir2{
+        grid-area: cir2;
+    }
+    #section1 #cir3{
+        grid-area: cir3;
+    }
+    #section1 #cir4{
+        grid-area: cir4;
+    }
+    #section1::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    .circle img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    .left{
+        width: 100%;
+        height: 460px;
+    }
+    .part{
+        width: 100%;
+        height: 164px;
+        /* float: right; */
+    }
+    #Project1{
+        margin-top: 6px;
+    }
+    
+}
+@media (max-width: 625px) {
+    .header {
+        width: 92.5%;
+        background-color: grey;
+        position: fixed;
+        height: 70px;
+        line-height: 35px;
+    }
+    .show-btn, .hide-btn{
+        display: block;
+        color: white;
+    }
+    .menu{
+        position: fixed;
+        background-color: gray;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: 1s;
+        padding: 80px 0px;
+    }
+    .menu li{
+        display: block;
+    }
+    .menu li a{
+        display: block;
+        padding: 20px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    .hide-btn{
+        position:absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .banner{
+        background-image: url(./Image/Practical8.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    #section1{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'cir1 '
+        'cir2 '
+        'cir3 '
+        'cir4 ';
+    }
+    #section1 #cir1{
+        grid-area: cir1;
+    }
+    #section1 #cir2{
+        grid-area: cir2;
+    }
+    #section1 #cir3{
+        grid-area: cir3;
+    }
+    #section1 #cir4{
+        grid-area: cir4;
+    }
+    #section1::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    .circle img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    .left{
+        width: 100%;
+        height: 460px;
+    }
+    .part{
+        width: 100%;
+        height: 164px;
+        /* float: right; */
+    }
+    #Project1{
+        margin-top: 6px;
+    }    
+}
